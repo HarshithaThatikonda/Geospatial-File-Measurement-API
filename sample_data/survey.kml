@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="survey" id="survey">
+	<SimpleField name="kind" type="string"></SimpleField>
+</Schema>
+<Folder><name>survey</name>
+  <Placemark id="survey.1">
+	<name>plot-A</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#survey">
+		<SimpleData name="kind">parcel</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>78.47,17.4 78.479,17.4 78.479,17.409 78.47,17.409 78.47,17.4</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+  <Placemark id="survey.2">
+	<name>road-1</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#survey">
+		<SimpleData name="kind">road</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>78.47,17.4 78.48,17.4 78.48,17.41</coordinates></LineString>
+  </Placemark>
+  <Placemark id="survey.3">
+	<name>marker</name>
+	<ExtendedData><SchemaData schemaUrl="#survey">
+		<SimpleData name="kind">poi</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>78.475,17.405</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
